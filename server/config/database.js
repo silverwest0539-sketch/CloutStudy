@@ -6,11 +6,11 @@ const mysql = require('mysql2')
 
 // 3) DB 정보 기재 
 const conn = mysql.createConnection({
-    host : 'localhost',
-    user : 'root',
-    password : '1234', 
-    port : 3306,
-    database : 'NODEJS'
+    host : 'project-db-campus.smhrd.com',
+    user : 'smhrd_teacher_kyb',
+    password : 'smhrd', 
+    port : 3307,
+    database : 'smhrd_teacher_kyb'
 })
 
 conn.connect()

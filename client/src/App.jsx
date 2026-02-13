@@ -16,7 +16,7 @@ function App() {
     // console.log(id, pw)
 
     // front에서 저장한 데이터를 server로 전송 -> axios 활용
-    axios.post('http://localhost:3000/getData', {
+    axios.post('http:/myweb/getData', {
       data: data
     }).then(res => {
       console.log('res', res.data)
@@ -25,7 +25,7 @@ function App() {
   }
 
   const sendToServerUser = () => {
-    axios.post('http://localhost:3000/getUser', {
+    axios.post('http://myweb/getUser', {
       id: id,
       pw: pw
     }).then(res => {

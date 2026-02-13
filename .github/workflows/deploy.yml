@@ -92,7 +92,7 @@ jobs:
           set -e
 
           # Public -> Private 접속
-          ssh -o StrictHostKeyChecking=no root@10.10.20.6 "bash -lc '
+          ssh -o StrictHostKeyChecking=no root@10.10.20.7 "bash -lc '
             set -e
 
             # (1) nvm 로드 (비로그인 쉘에서도 node/npm 사용 가능하게)
